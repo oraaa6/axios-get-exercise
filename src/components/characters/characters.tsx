@@ -35,7 +35,7 @@ const Characters: React.FC = () => {
       <h1 className="title">10 random characters of Breaking Bad</h1>
       <div className="characters">
         {characters.map((character) => (
-          <div className="character">
+          <div key={character.char_id} className="character">
             <img className="character__image" src={character.img} alt="" />
             <div>
               <p className="character__name">
